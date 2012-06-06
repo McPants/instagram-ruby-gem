@@ -61,6 +61,7 @@ module Instagram
 
       def tag_search(tag)
         response = get('tags/'+tag+'/media/recent')
+        logger.info "----==============================================----"
         response
       end
     end

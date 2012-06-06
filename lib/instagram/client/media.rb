@@ -58,6 +58,11 @@ module Instagram
         response = get('media/search', options.merge(:lat => lat, :lng => lng))
         response
       end
+
+      def tag_search(tag)
+        response = get('tags', tag)
+        response
+      end
     end
   end
 end
